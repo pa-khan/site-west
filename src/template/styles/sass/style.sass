@@ -1,6 +1,7 @@
 /* Including styles files */
 @import sprite.sass
-
+@import fonts.sass
+@import ../../libs/fancybox/dist/jquery.fancybox.css
 
 /* Including fonts */
 @font-face
@@ -11,9 +12,9 @@
 
 
 /* Global settings */
-$font-size: 16px
-$font-family-1: 'Tahoma', sans-serif
-$color-1: #000
+$font-size: 18px
+$font-family-1: 'Lato', sans-serif
+$color-1: white
 
 
 
@@ -28,6 +29,9 @@ body
 	font-family: $font-family-1
 	color: $color-1
 	background: white
+	max-width: 1920px
+	margin-left: auto
+	margin-right: auto
 
 header, nav, main, section, article, aside, footer, li, .block
 	display: block
@@ -61,6 +65,7 @@ a
 
 img
 	display: block
+	max-width: 100%
 
 
 .icon
@@ -73,7 +78,7 @@ img
 /* Grid */
 .container
 	position: relative
-	width: (1140px + 30px)
+	width: (1170px + 30px)
 	padding-left: 15px
 	padding-right: 15px
 
@@ -121,6 +126,10 @@ img
 	font-family: $font-family-1
 	background: white
 	width: 100%
+	padding: 15px
+	border: 1px solid rgba(0,0,0,.2)
+	border-radius: 3px
+	margin-bottom: 10px
 	&::placeholder
 		color: #878686
 
@@ -145,11 +154,33 @@ img
 	margin-right: auto
 	text-align: center
 	transition: .3s
-
+	background-color: #ff093d
+	width: 330px
+	font-size: 24px
+	text-transform: uppercase
+	font-weight: 500
+	letter-spacing: 1.2px
+	border-radius: 7px
+	padding: 27px 0 22px
+	border-bottom: 8px solid #c41339
+	&:hover
+		background: #c41339
+		
 .input, .textarea
 	transition: border-color .3s
 
-
+.popup
+	display: none
+	width: 400px
+	padding: 30px
+	border-radius: 20px
+	&__button
+		color: white
+		padding-top: 15px
+		padding-bottom: 15px
+		border-bottom: none
+		width: 100%
+		border-radius: 3px
 
 
 /* Blocks align */ 
@@ -162,3 +193,430 @@ img
 .center, .container
 	margin-left: auto
 	margin-right: auto
+
+
+.panel
+	position: relative
+	padding-top: 27px
+	padding-bottom: 17px
+	background-color: #f2b541
+	&:after
+		position: absolute
+		content: ''
+		width: 100%
+		height: 44px
+		bottom: -22px
+		background: url('../../img/bg/line-2.png')
+
+.logo
+	margin-left: 80px
+	margin-right: 175px
+
+.address
+	width: 215px
+	margin-right: 70px
+
+.phone
+	&__num
+		font-weight: 900
+	&__link
+		a
+			border-color: white
+			&:hover
+				border-color: transparent
+
+.contact
+	font-size: 0
+	&__icon, &__content
+		display: inline-block
+		vertical-align: middle
+	&__icon
+		margin-right: 15px
+	&__content
+		font-size: 18px
+		line-height: 30px
+		letter-spacing: 0.5px
+
+
+.header
+	padding-top: 105px
+	height: 733px
+	background: url('../../img/bg/header.png') no-repeat center -100px
+	// background-size: cover
+	&__desc, &__title
+		text-align: center
+		text-transform: uppercase
+	&__desc
+		font-size: 24px
+		font-weight: 500
+		margin-bottom: 10px
+		letter-spacing: 1.2px
+	&__title
+		font-size: 48px
+		font-weight: 900
+		letter-spacing: 2.4px
+		margin-bottom: 390px
+	
+.nav
+	background: url('../../img/bg/line-1.png') no-repeat center 0
+	padding-top: 10px
+	position: relative
+	z-index: 3
+	&__item
+		width: 137px
+		margin-left: 15px
+		margin-right: 15px
+		&:hover
+			.nav
+				&__img
+					&:before
+						opacity: 1
+	&__img
+		margin-bottom: 18px
+		position: relative
+		&:before
+			transition: .3s
+			opacity: 0
+			content: ''
+			position: absolute
+			display: block
+			width: 127px
+			height: 127px
+			border-radius: 50%
+			background: rgba(255,255,255,.7)
+			border: 6px solid white
+	&__text
+		color: #616161
+		font-weight: 900
+		text-transform: uppercase
+		font-size: 14px
+
+.title
+	font-size: 79px
+	text-transform: uppercase
+	letter-spacing: 2.4px
+	font-weight: 900
+.excursions
+	color: #616161
+	background: url('../../img/bg/haski.jpg') no-repeat center top
+	position: relative
+	&:before
+		content: ''
+		display: block
+		position: absolute
+		width: 100%
+		top: 70px
+		height: 44px
+		background: url('../../img/bg/line-2.png') center
+	&__title
+		color: #f2b541
+		position: relative
+		padding-top: 170px
+		margin-bottom: 10px
+		&:after
+			content: ''
+			position: relative
+			top: -8px
+			margin-left: 20px
+			display: inline-block
+			vertical-align: middle
+			width: 90px
+			height: 19px
+			background-color: #f2b541
+	&__desc
+		font-weight: 900
+		font-size: 24px
+		max-width: 1010px
+		color: #98b4d6
+		text-transform: uppercase
+		margin-bottom: 70px
+	&__item
+		width: 33.333%
+		position: relative
+		margin-bottom: 65px
+	&__num
+		font-size: 259px
+		line-height: 180px
+		font-weight: 900
+		text-transform: uppercase
+		color: #f2b541
+		position: absolute
+		top: -33px
+		left: -30px
+		opacity: .5
+	&__text
+		padding-left: 50px
+		text-align: left
+		position: relative
+		z-index: 2
+		padding-right: 50px
+
+
+.price
+	z-index: 3
+	position: relative
+	margin-top: -30px
+	&_yellow		
+		padding-top: 45px
+		padding-bottom: 70px
+		background: url('../../img/bg/yprazhka.png') center top
+	&_blue
+		padding-top: 60px
+		padding-bottom: 60px
+		background: url('../../img/bg/blue.png') center top
+		.price
+			&__item
+				&:nth-of-type(2)
+					.price
+						&__title
+							padding-top: 30px
+	&__list
+		max-width: 975px
+		margin-left: auto
+		margin-right: 10px
+	&__title
+		font-size: 24px
+		font-weight: 900
+		text-transform: uppercase
+		&_main
+			max-width: 850px
+			margin-left: auto
+			margin-right: auto
+			text-align: center
+			margin-bottom: 50px
+		&_sub
+			&:after
+				display: block
+				content: ''
+				width: 300px
+				margin-top: 22px
+				margin-bottom: 20px
+				border-bottom: 6px dotted #ffffff
+	&__text
+		font-weight: 700
+	&__item
+		text-align: left
+		font-size: 24px
+		&:nth-of-type(1)
+			width: 365px
+		&:nth-of-type(2)
+			width: 540px
+
+
+.order
+	padding-top: 38px
+	padding-bottom: 60px
+	&__title
+		color: #474747
+		font-size: 24px
+		text-align: center
+		max-width: 1055px
+		margin-left: auto
+		margin-right: auto
+		font-weight: 900
+		text-transform: uppercase
+		margin-bottom: 25px
+		a
+			color: #474747
+
+
+.program
+	padding-top: 42px
+	padding-bottom: 45px
+	background: url('../../img/bg/ny.png') no-repeat center top
+	&__wrap
+		max-width: 600px
+	&__title
+		margin-bottom: 20px
+	&__text
+		margin-bottom: 35px
+		text-align: justify
+		font-weight: 700
+		letter-spacing: 0.9px
+	&__button
+		border-bottom: none
+		padding-top: 20px
+
+
+.team
+	background: url('../../img/bg/yprazhka-2.png') no-repeat center top
+	padding-bottom: 40px
+	&__wrap
+		max-width: 590px
+		margin-left: auto
+		margin-right: 20px
+		padding-top: 30px
+	&__title
+		margin-bottom: 10px
+	&__text
+		font-weight: 700
+		letter-spacing: 0.9px
+		text-align: justify
+		p
+			margin-bottom: 25px
+			&:last-of-type
+				margin-bottom: 0
+
+.quest
+	padding-top: 55px
+	padding-bottom: 62px
+	margin-top: -20px
+	background: url('../../img/bg/company.png') no-repeat center top
+	&__title
+		margin-bottom: 20px
+	&__text
+		max-width: 590px
+		font-weight: 700
+		letter-spacing: 0.9px
+		text-align: justify
+		p
+			margin-bottom: 20px
+			&:last-of-type
+				margin-bottom: 0
+
+.services
+	color: #474747
+	background: url('../../img/bg/img.png') no-repeat left 20px
+	min-height: 456px
+	padding-top: 60px
+	&__title
+		font-size: 48px
+		font-weight: 900
+		text-transform: uppercase
+		color: #80b0d9
+		margin-bottom: 40px
+	&__item
+		width: 33.3333%
+		position: relative
+	&__text
+		font-size: 24px
+		line-height: 30px
+		font-weight: 600
+		letter-spacing: 1.2px
+		text-align: left
+		padding-left: 100px
+		position: relative
+		z-index: 2
+	&__num
+		top: -20px
+		left: 10px
+		opacity: .5
+		position: absolute
+		color: #f2b541
+		text-transform: uppercase
+		font-size: 259px
+		line-height: 180px
+		font-weight: 900
+
+.celebration
+	padding-top: 35px
+	padding-bottom: 45px
+	background: url('../../img/bg/birthday.png') no-repeat center top
+	&__title
+		margin-bottom: 10px
+		font-size: 72px
+	&__wrap
+		max-width: 590px
+		text-align: justify
+		margin-left: auto
+		margin-right: 20px
+	&__text
+		font-weight: 700
+		p
+			margin-bottom: 30px
+			&:last-of-type
+				margin-bottom: 0
+
+.certificate
+	z-index: 2
+	position: relative
+	margin-top: -20px
+	margin-bottom: -20px
+	padding-top: 55px
+	padding-bottom: 70px
+	text-align: center
+	text-transform: uppercase
+	font-weight: 900
+	color: #80b0d9
+	background: url('../../img/bg/line-3.png') no-repeat center top, url('../../img/bg/line-3.png') no-repeat center bottom
+	&__title
+		font-size: 48px
+		letter-spacing: 2.4px
+		color: #f2b541
+		margin-bottom: 50px
+	&__text
+		max-width: 1035px
+		font-size: 24px
+		margin-left: auto
+		margin-right: auto
+		p
+			margin-bottom: 25px
+			&:last-of-type
+				margin-bottom: 0
+
+.question
+	text-align: center
+	background-color: #80b0d9
+	text-transform: uppercase
+	font-weight: 700
+	padding-top: 70px
+	padding-bottom: 40px
+	&__title
+		font-size: 36px
+		letter-spacing: 1.8px
+		max-width: 915px
+		margin-left: auto
+		margin-right: auto
+	&__num
+		font-size: 60px
+		letter-spacing: 3px
+		margin-top: 10px
+
+.gallery
+	&__title
+		font-size: 48px
+		text-transform: uppercase
+		font-weight: 900
+		letter-spacing: 2.4px
+		color: #80b0d9
+		padding-top: 22px
+		padding-bottom: 30px
+	&__item
+		width: 20%
+		font-size: 0
+
+.contacts
+	padding-top: 110px
+	padding-bottom: 65px
+	color: #3e3e3e
+	a
+		color: #3e3e3e
+	&__map
+		width: (1170px - 550px)
+	&__content
+		width: 510px
+	&__title
+		font-size: 36px
+		font-weight: 700
+		color: #80b0d9
+		margin-bottom: 105px
+	&__text
+		p
+			margin-bottom: 70px
+			&:last-of-type
+				margin-bottom: 0
+		u
+			width: 33px
+			margin-right: 35px
+
+
+.footer
+	padding-top: 30px
+	padding-bottom: 85px
+	background-color: #f2b541
+	.logo
+		margin-left: 0
+
+
+
+

@@ -1,4 +1,137 @@
 /* Including styles files */
+@import url(../../libs/fancybox/dist/jquery.fancybox.css);
+.icon-marker-white {
+  background-image: url(../../img/sprite.png);
+  background-position: 0px 0px;
+  width: 35px;
+  height: 47px; }
+
+.icon-marker-yellow {
+  background-image: url(../../img/sprite.png);
+  background-position: -72px 0px;
+  width: 33px;
+  height: 33px; }
+
+.icon-phone-white {
+  background-image: url(../../img/sprite.png);
+  background-position: -35px 0px;
+  width: 37px;
+  height: 37px; }
+
+.icon-phone-yellow {
+  background-image: url(../../img/sprite.png);
+  background-position: 0px -47px;
+  width: 29px;
+  height: 29px; }
+
+@font-face {
+  font-family: 'Lato';
+  src: local("../../fonts/lato/Lato Hairline"), local("../../fonts/lato/Lato-Hairline"), url("../../fonts/lato/latohairline.woff2") format("woff2"), url("../../fonts/lato/latohairline.woff") format("woff"), url("../../fonts/lato/latohairline.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Lato';
+  src: local("../../fonts/lato/Lato Hairline Italic"), local("../../fonts/lato/Lato-HairlineItalic"), url("../../fonts/lato/latohairlineitalic.woff2") format("woff2"), url("../../fonts/lato/latohairlineitalic.woff") format("woff"), url("../../fonts/lato/latohairlineitalic.ttf") format("truetype");
+  font-weight: 100;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Lato';
+  src: local("../../fonts/lato/Lato Thin"), local("../../fonts/lato/Lato-Thin"), url("../../fonts/lato/latothin.woff2") format("woff2"), url("../../fonts/lato/latothin.woff") format("woff"), url("../../fonts/lato/latothin.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Lato';
+  src: local("../../fonts/lato/Lato Thin Italic"), local("../../fonts/lato/Lato-ThinItalic"), url("../../fonts/lato/latothinitalic.woff2") format("woff2"), url("../../fonts/lato/latothinitalic.woff") format("woff"), url("../../fonts/lato/latothinitalic.ttf") format("truetype");
+  font-weight: 200;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Lato';
+  src: local("../../fonts/lato/Lato Light"), local("../../fonts/lato/Lato-Light"), url("../../fonts/lato/latolight.woff2") format("woff2"), url("../../fonts/lato/latolight.woff") format("woff"), url("../../fonts/lato/latolight.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Lato';
+  src: local("../../fonts/lato/Lato Light Italic"), local("../../fonts/lato/Lato-LightItalic"), url("../../fonts/lato/latolightitalic.woff2") format("woff2"), url("../../fonts/lato/latolightitalic.woff") format("woff"), url("../../fonts/lato/latolightitalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Lato';
+  src: local("../../fonts/lato/Lato Regular"), local("../../fonts/lato/Lato-Regular"), url("../../fonts/lato/latoregular.woff2") format("woff2"), url("../../fonts/lato/latoregular.woff") format("woff"), url("../../fonts/lato/latoregular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Lato';
+  src: local("../../fonts/lato/Lato Italic"), local("../../fonts/lato/Lato-Italic"), url("../../fonts/lato/latoitalic.woff2") format("woff2"), url("../../fonts/lato/latoitalic.woff") format("woff"), url("../../fonts/lato/latoitalic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Lato';
+  src: local("../../fonts/lato/Lato Medium"), local("../../fonts/lato/Lato-Medium"), url("../../fonts/lato/latomedium.woff2") format("woff2"), url("../../fonts/lato/latomedium.woff") format("woff"), url("../../fonts/lato/latomedium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Lato';
+  src: local("../../fonts/lato/Lato Medium Italic"), local("../../fonts/lato/Lato-MediumItalic"), url("../../fonts/lato/latomediumitalic.woff2") format("woff2"), url("../../fonts/lato/latomediumitalic.woff") format("woff"), url("../../fonts/lato/latomediumitalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Lato';
+  src: local("../../fonts/lato/Lato Semibold"), local("../../fonts/lato/Lato-Semibold"), url("../../fonts/lato/latosemibold.woff2") format("woff2"), url("../../fonts/lato/latosemibold.woff") format("woff"), url("../../fonts/lato/latosemibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Lato';
+  src: local("../../fonts/lato/Lato Semibold Italic"), local("../../fonts/lato/Lato-SemiboldItalic"), url("../../fonts/lato/latosemibolditalic.woff2") format("woff2"), url("../../fonts/lato/latosemibolditalic.woff") format("woff"), url("../../fonts/lato/latosemibolditalic.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Lato';
+  src: local("../../fonts/lato/Lato Bold"), local("../../fonts/lato/Lato-Bold"), url("../../fonts/lato/latobold.woff2") format("woff2"), url("../../fonts/lato/latobold.woff") format("woff"), url("../../fonts/lato/latobold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Lato';
+  src: local("../../fonts/lato/Lato Bold Italic"), local("../../fonts/lato/Lato-BoldItalic"), url("../../fonts/lato/latobolditalic.woff2") format("woff2"), url("../../fonts/lato/latobolditalic.woff") format("woff"), url("../../fonts/lato/latobolditalic.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Lato';
+  src: local("../../fonts/lato/Lato Heavy"), local("../../fonts/lato/Lato-Heavy"), url("../../fonts/lato/latoheavy.woff2") format("woff2"), url("../../fonts/lato/latoheavy.woff") format("woff"), url("../../fonts/lato/latoheavy.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Lato';
+  src: local("../../fonts/lato/Lato Heavy Italic"), local("../../fonts/lato/Lato-HeavyItalic"), url("../../fonts/lato/latoheavyitalic.woff2") format("woff2"), url("../../fonts/lato/latoheavyitalic.woff") format("woff"), url("../../fonts/lato/latoheavyitalic.ttf") format("truetype");
+  font-weight: 800;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Lato';
+  src: local("../../fonts/lato/Lato Black"), local("../../fonts/lato/Lato-Black"), url("../../fonts/lato/latoblack.woff2") format("woff2"), url("../../fonts/lato/latoblack.woff") format("woff"), url("../../fonts/lato/latoblack.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Lato';
+  src: local("../../fonts/lato/Lato Black Italic"), local("../../fonts/lato/Lato-BlackItalic"), url("../../fonts/lato/latoblackitalic.woff2") format("woff2"), url("../../fonts/lato/latoblackitalic.woff") format("woff"), url("../../fonts/lato/latoblackitalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic; }
+
 /* Including fonts */
 @font-face {
   src: url("../../fonts/"); }
@@ -12,10 +145,13 @@
           box-sizing: border-box; }
 
 body {
-  font-size: 16px;
-  font-family: "Tahoma", sans-serif;
-  color: #000;
-  background: white; }
+  font-size: 18px;
+  font-family: "Lato", sans-serif;
+  color: white;
+  background: white;
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto; }
 
 header, nav, main, section, article, aside, footer, li, .block {
   display: block; }
@@ -34,18 +170,19 @@ ul {
   font-size: 0; }
   ul li {
     display: inline-block;
-    font-size: 16px;
+    font-size: 18px;
     list-style-type: none; }
 
 a {
-  color: #000;
+  color: white;
   text-decoration: none;
   border-bottom: 1px solid transparent;
   -webkit-transition: .3s;
   transition: .3s; }
 
 img {
-  display: block; }
+  display: block;
+  max-width: 100%; }
 
 .icon {
   display: inline-block;
@@ -57,7 +194,7 @@ img {
 /* Grid */
 .container {
   position: relative;
-  width: 1170px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px; }
 
@@ -81,7 +218,7 @@ img {
   .col_line {
     display: inline-block;
     vertical-align: top;
-    font-size: 16px;
+    font-size: 18px;
     min-height: 1px; }
   .col-1 {
     width: 100%; }
@@ -97,10 +234,15 @@ img {
 /* Form elements */
 .input {
   display: block;
-  font-size: 16px;
-  font-family: "Tahoma", sans-serif;
+  font-size: 18px;
+  font-family: "Lato", sans-serif;
   background: white;
-  width: 100%; }
+  width: 100%;
+  padding: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  margin-bottom: 10px; }
   .input::-webkit-input-placeholder {
     color: #878686; }
   .input::-moz-placeholder {
@@ -111,8 +253,8 @@ img {
     color: #878686; }
 
 .textarea {
-  font-size: 16px;
-  font-family: "Tahoma", sans-serif;
+  font-size: 18px;
+  font-family: "Lato", sans-serif;
   display: block;
   background: white;
   resize: none;
@@ -129,18 +271,45 @@ img {
 .button {
   position: relative;
   display: block;
-  font-size: 16px;
-  font-family: "Tahoma", sans-serif;
+  font-size: 18px;
+  font-family: "Lato", sans-serif;
   cursor: pointer;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
   -webkit-transition: .3s;
-  transition: .3s; }
+  transition: .3s;
+  background-color: #ff093d;
+  width: 330px;
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 1.2px;
+  -webkit-border-radius: 7px;
+          border-radius: 7px;
+  padding: 27px 0 22px;
+  border-bottom: 8px solid #c41339; }
+  .button:hover {
+    background: #c41339; }
 
 .input, .textarea {
   -webkit-transition: border-color .3s;
   transition: border-color .3s; }
+
+.popup {
+  display: none;
+  width: 400px;
+  padding: 30px;
+  -webkit-border-radius: 20px;
+          border-radius: 20px; }
+  .popup__button {
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: none;
+    width: 100%;
+    -webkit-border-radius: 3px;
+            border-radius: 3px; }
 
 /* Blocks align */
 .left {
@@ -152,3 +321,411 @@ img {
 .center, .container {
   margin-left: auto;
   margin-right: auto; }
+
+.panel {
+  position: relative;
+  padding-top: 27px;
+  padding-bottom: 17px;
+  background-color: #f2b541; }
+  .panel:after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 44px;
+    bottom: -22px;
+    background: url("../../img/bg/line-2.png"); }
+
+.logo {
+  margin-left: 80px;
+  margin-right: 175px; }
+
+.address {
+  width: 215px;
+  margin-right: 70px; }
+
+.phone__num {
+  font-weight: 900; }
+
+.phone__link a {
+  border-color: white; }
+  .phone__link a:hover {
+    border-color: transparent; }
+
+.contact {
+  font-size: 0; }
+  .contact__icon, .contact__content {
+    display: inline-block;
+    vertical-align: middle; }
+  .contact__icon {
+    margin-right: 15px; }
+  .contact__content {
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.5px; }
+
+.header {
+  padding-top: 105px;
+  height: 733px;
+  background: url("../../img/bg/header.png") no-repeat center -100px; }
+  .header__desc, .header__title {
+    text-align: center;
+    text-transform: uppercase; }
+  .header__desc {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    letter-spacing: 1.2px; }
+  .header__title {
+    font-size: 48px;
+    font-weight: 900;
+    letter-spacing: 2.4px;
+    margin-bottom: 390px; }
+
+.nav {
+  background: url("../../img/bg/line-1.png") no-repeat center 0;
+  padding-top: 10px;
+  position: relative;
+  z-index: 3; }
+  .nav__item {
+    width: 137px;
+    margin-left: 15px;
+    margin-right: 15px; }
+    .nav__item:hover .nav__img:before {
+      opacity: 1; }
+  .nav__img {
+    margin-bottom: 18px;
+    position: relative; }
+    .nav__img:before {
+      -webkit-transition: .3s;
+      transition: .3s;
+      opacity: 0;
+      content: '';
+      position: absolute;
+      display: block;
+      width: 127px;
+      height: 127px;
+      -webkit-border-radius: 50%;
+              border-radius: 50%;
+      background: rgba(255, 255, 255, 0.7);
+      border: 6px solid white; }
+  .nav__text {
+    color: #616161;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 14px; }
+
+.title {
+  font-size: 79px;
+  text-transform: uppercase;
+  letter-spacing: 2.4px;
+  font-weight: 900; }
+
+.excursions {
+  color: #616161;
+  background: url("../../img/bg/haski.jpg") no-repeat center top;
+  position: relative; }
+  .excursions:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    height: 44px;
+    background: url("../../img/bg/line-2.png") center; }
+  .excursions__title {
+    color: #f2b541;
+    position: relative;
+    padding-top: 170px;
+    margin-bottom: 10px; }
+    .excursions__title:after {
+      content: '';
+      position: relative;
+      top: -8px;
+      margin-left: 20px;
+      display: inline-block;
+      vertical-align: middle;
+      width: 90px;
+      height: 19px;
+      background-color: #f2b541; }
+  .excursions__desc {
+    font-weight: 900;
+    font-size: 24px;
+    max-width: 1010px;
+    color: #98b4d6;
+    text-transform: uppercase;
+    margin-bottom: 70px; }
+  .excursions__item {
+    width: 33.333%;
+    position: relative;
+    margin-bottom: 65px; }
+  .excursions__num {
+    font-size: 259px;
+    line-height: 180px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #f2b541;
+    position: absolute;
+    top: -33px;
+    left: -30px;
+    opacity: .5; }
+  .excursions__text {
+    padding-left: 50px;
+    text-align: left;
+    position: relative;
+    z-index: 2;
+    padding-right: 50px; }
+
+.price {
+  z-index: 3;
+  position: relative;
+  margin-top: -30px; }
+  .price_yellow {
+    padding-top: 45px;
+    padding-bottom: 70px;
+    background: url("../../img/bg/yprazhka.png") center top; }
+  .price_blue {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background: url("../../img/bg/blue.png") center top; }
+    .price_blue .price__item:nth-of-type(2) .price__title {
+      padding-top: 30px; }
+  .price__list {
+    max-width: 975px;
+    margin-left: auto;
+    margin-right: 10px; }
+  .price__title {
+    font-size: 24px;
+    font-weight: 900;
+    text-transform: uppercase; }
+    .price__title_main {
+      max-width: 850px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      margin-bottom: 50px; }
+    .price__title_sub:after {
+      display: block;
+      content: '';
+      width: 300px;
+      margin-top: 22px;
+      margin-bottom: 20px;
+      border-bottom: 6px dotted #ffffff; }
+  .price__text {
+    font-weight: 700; }
+  .price__item {
+    text-align: left;
+    font-size: 24px; }
+    .price__item:nth-of-type(1) {
+      width: 365px; }
+    .price__item:nth-of-type(2) {
+      width: 540px; }
+
+.order {
+  padding-top: 38px;
+  padding-bottom: 60px; }
+  .order__title {
+    color: #474747;
+    font-size: 24px;
+    text-align: center;
+    max-width: 1055px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 25px; }
+    .order__title a {
+      color: #474747; }
+
+.program {
+  padding-top: 42px;
+  padding-bottom: 45px;
+  background: url("../../img/bg/ny.png") no-repeat center top; }
+  .program__wrap {
+    max-width: 600px; }
+  .program__title {
+    margin-bottom: 20px; }
+  .program__text {
+    margin-bottom: 35px;
+    text-align: justify;
+    font-weight: 700;
+    letter-spacing: 0.9px; }
+  .program__button {
+    border-bottom: none;
+    padding-top: 20px; }
+
+.team {
+  background: url("../../img/bg/yprazhka-2.png") no-repeat center top;
+  padding-bottom: 40px; }
+  .team__wrap {
+    max-width: 590px;
+    margin-left: auto;
+    margin-right: 20px;
+    padding-top: 30px; }
+  .team__title {
+    margin-bottom: 10px; }
+  .team__text {
+    font-weight: 700;
+    letter-spacing: 0.9px;
+    text-align: justify; }
+    .team__text p {
+      margin-bottom: 25px; }
+      .team__text p:last-of-type {
+        margin-bottom: 0; }
+
+.quest {
+  padding-top: 55px;
+  padding-bottom: 62px;
+  margin-top: -20px;
+  background: url("../../img/bg/company.png") no-repeat center top; }
+  .quest__title {
+    margin-bottom: 20px; }
+  .quest__text {
+    max-width: 590px;
+    font-weight: 700;
+    letter-spacing: 0.9px;
+    text-align: justify; }
+    .quest__text p {
+      margin-bottom: 20px; }
+      .quest__text p:last-of-type {
+        margin-bottom: 0; }
+
+.services {
+  color: #474747;
+  background: url("../../img/bg/img.png") no-repeat left 20px;
+  min-height: 456px;
+  padding-top: 60px; }
+  .services__title {
+    font-size: 48px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #80b0d9;
+    margin-bottom: 40px; }
+  .services__item {
+    width: 33.3333%;
+    position: relative; }
+  .services__text {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    text-align: left;
+    padding-left: 100px;
+    position: relative;
+    z-index: 2; }
+  .services__num {
+    top: -20px;
+    left: 10px;
+    opacity: .5;
+    position: absolute;
+    color: #f2b541;
+    text-transform: uppercase;
+    font-size: 259px;
+    line-height: 180px;
+    font-weight: 900; }
+
+.celebration {
+  padding-top: 35px;
+  padding-bottom: 45px;
+  background: url("../../img/bg/birthday.png") no-repeat center top; }
+  .celebration__title {
+    margin-bottom: 10px;
+    font-size: 72px; }
+  .celebration__wrap {
+    max-width: 590px;
+    text-align: justify;
+    margin-left: auto;
+    margin-right: 20px; }
+  .celebration__text {
+    font-weight: 700; }
+    .celebration__text p {
+      margin-bottom: 30px; }
+      .celebration__text p:last-of-type {
+        margin-bottom: 0; }
+
+.certificate {
+  z-index: 2;
+  position: relative;
+  margin-top: -20px;
+  margin-bottom: -20px;
+  padding-top: 55px;
+  padding-bottom: 70px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: #80b0d9;
+  background: url("../../img/bg/line-3.png") no-repeat center top, url("../../img/bg/line-3.png") no-repeat center bottom; }
+  .certificate__title {
+    font-size: 48px;
+    letter-spacing: 2.4px;
+    color: #f2b541;
+    margin-bottom: 50px; }
+  .certificate__text {
+    max-width: 1035px;
+    font-size: 24px;
+    margin-left: auto;
+    margin-right: auto; }
+    .certificate__text p {
+      margin-bottom: 25px; }
+      .certificate__text p:last-of-type {
+        margin-bottom: 0; }
+
+.question {
+  text-align: center;
+  background-color: #80b0d9;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding-top: 70px;
+  padding-bottom: 40px; }
+  .question__title {
+    font-size: 36px;
+    letter-spacing: 1.8px;
+    max-width: 915px;
+    margin-left: auto;
+    margin-right: auto; }
+  .question__num {
+    font-size: 60px;
+    letter-spacing: 3px;
+    margin-top: 10px; }
+
+.gallery__title {
+  font-size: 48px;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 2.4px;
+  color: #80b0d9;
+  padding-top: 22px;
+  padding-bottom: 30px; }
+
+.gallery__item {
+  width: 20%;
+  font-size: 0; }
+
+.contacts {
+  padding-top: 110px;
+  padding-bottom: 65px;
+  color: #3e3e3e; }
+  .contacts a {
+    color: #3e3e3e; }
+  .contacts__map {
+    width: 620px; }
+  .contacts__content {
+    width: 510px; }
+  .contacts__title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #80b0d9;
+    margin-bottom: 105px; }
+  .contacts__text p {
+    margin-bottom: 70px; }
+    .contacts__text p:last-of-type {
+      margin-bottom: 0; }
+  .contacts__text u {
+    width: 33px;
+    margin-right: 35px; }
+
+.footer {
+  padding-top: 30px;
+  padding-bottom: 85px;
+  background-color: #f2b541; }
+  .footer .logo {
+    margin-left: 0; }

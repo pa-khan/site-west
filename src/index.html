@@ -7,7 +7,7 @@
 	<link rel="shortcut icon" href="upload/favicon.png" type="image/png">
 	<link rel="stylesheet" href="template/styles/css/style.css" />
 	<link rel="stylesheet" href="template/styles/css/responsive.css" />
-	<script src="template/scripts/libs.min.js"></script>
+	<script src="template/scripts/libs.js"></script>
 	<script src="template/scripts/common.js"></script>
 	<!--[if lt IE 9]>
 	<script>
@@ -22,14 +22,262 @@
 	<![endif]-->
 </head>
 <body>
+	<div class="popup" id="popup-order">
+		<input type="text" class="popup__input input" placeholder="Имя">
+		<input type="text" class="popup__input input input_phone" placeholder="Телефон*">
+		<button class="popup__button button">Отправить</button>
+	</div>
+	<div class="panel">
+		<div class="container row">
+			<div class="logo col"><img src="upload/logo.png" alt=""></div>
+			<div class="address contact col">
+				<div class="contact__icon"><i class="icon icon-marker-white"></i></div>
+				<div class="contact__content">Адрес <br/>где мы находимся</div>
+			</div>
+			<div class="phone contact col">
+				<div class="contact__icon"><i class="icon icon-phone-white"></i></div>
+				<div class="contact__content">
+					<div class="phone__num"><a href="">8-800-000-00-00</a></div>
+					<div class="phone__link"><a data-fancybox data-src="#popup-order" href="javascript:;">Заказать звонок</a></div>
+				</div>
+			</div>
+		</div>
+	</div>
 	<header class="header">
-		
+		<div class="container">
+			<div class="header__desc">Питомник ездовых собак "Северный"</div>
+			<div class="header__title">Экскурсии, Катания, Квесты</div>
+			<div class="nav row_line">
+				<a href="#excursions" class="nav__item col_line">
+					<div class="nav__img"><img src="upload/nav/1.png" alt=""></div>
+					<div class="nav__text">Экскурсии</div>
+				</a>
+				<a href="#ny" class="nav__item col_line">
+					<div class="nav__img"><img src="upload/nav/2.png" alt=""></div>
+					<div class="nav__text">Новогодняя <br>программа</div>
+				</a>
+				<a href="#catania" class="nav__item col_line">
+					<div class="nav__img"><img src="upload/nav/3.png" alt=""></div>
+					<div class="nav__text">Катания <br>на упряжке</div>
+				</a>
+				<a href="#quest" class="nav__item col_line">
+					<div class="nav__img"><img src="upload/nav/4.png" alt=""></div>
+					<div class="nav__text">Квесты для <br>детей</div>
+				</a>
+				<a href="#holidays" class="nav__item col_line">
+					<div class="nav__img"><img src="upload/nav/5.png" alt=""></div>
+					<div class="nav__text">Проведение <br>праздников</div>
+				</a>
+				<a href="#certificate" class="nav__item col_line">
+					<div class="nav__img"><img src="upload/nav/6.png" alt=""></div>
+					<div class="nav__text">Подарочный <br>сертификат</div>
+				</a>
+				<a href="#contacts" class="nav__item col_line">
+					<div class="nav__img"><img src="upload/nav/7.png" alt=""></div>
+					<div class="nav__text">Контакты</div>
+				</a>
+			</div>
+		</div>
 	</header>
 	<main class="main">
-		
+		<div class="excursions" id="excursions">
+			<div class="container">
+				<div class="excursions__title title">Экскурсии</div>
+				<div class="excursions__desc">Забудьте о привычном значении слову «экскурсия», которое сразу вызывает скуку. На нашем двухчасовом мероприятии вы не заскучаете ни минуты. Вас ждут:</div>
+				<div class="excursions__list row_line">
+					<div class="excursions__item col_line">
+						<div class="excursions__num">1</div>
+						<div class="excursions__text">Около шестидесяти хвостатых представителей различных ездовых пород, которых вы сможете обнять, погладить, покормить с руки (корм мы предоставляем)</div>
+					</div>
+					<div class="excursions__item col_line">
+						<div class="excursions__num">2</div>
+						<div class="excursions__text">Не забываем и о классических сибирских хаски, с которыми не возможно ни обняться и ни сфотографироваться. Эти любвеобильные пушистые голубоглазые создания сразу покорят ваше сердце. Хотите пойти погулять с понравившейся собакой, а то и не с одной? Пожалуйста! Все это входит в нашу экскурсию.</div>
+					</div>
+					<div class="excursions__item col_line">
+						<div class="excursions__num">3</div>
+						<div class="excursions__text">И какие же ездовые собаки без катания на упряжке? У нас вы сможете покататься на настоящей упряжке спортивных ездовых собак по живописной трассе в лесу (катание не входит в стоимость входного билета). Катания проводятся в любое время года.</div>
+					</div>
+					<div class="excursions__item col_line">
+						<div class="excursions__num">4</div>
+						<div class="excursions__text">Хотите большего? Не проблема – желающие смогут поучаствовать в процессе подготовки упряжек к старту под руководством наших инструкторов.</div>
+					</div>
+					<div class="excursions__item col_line">
+						<div class="excursions__num">5</div>
+						<div class="excursions__text">Несмотря на то, что большая часть экскурсии проходит на улице, мерзнуть у нас вам не придется. Вас ждет чаепитие в теплом помещении с дровяной печкой. Тепло и запах дерева согреют в любой мороз. Мы угощаем всех наших гостей горячим чаем. Тут же вы сможете приобрести себе памятные сувениры с изображениями собак, носки, пояса и варежки из настоящей собачей шерсти и т.д.</div>
+					</div>
+					<div class="excursions__item col_line">
+						<div class="excursions__num">6</div>
+						<div class="excursions__text">Главное – не бойтесь задавать вопросы. Наши ведущие и инструктора с удовольствием расскажут вам об ездовых собаках. В доме вы увидите уникальную подборку фотографий, посвященную ездовым породам собак, начиная со времен золотой лихорадки. А те, кому будет интересно как проходят соревнования на ездовых собаках, смогут посмотреть наши фильмы и ролики с нашими выступлениями.</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="price price_yellow">
+			<div class="container">
+				<div class="price__title price__title_main">На наших экскурсиях нет ограничений по возрасту! К нам приезжают и детки и взрослые любых возрастов.</div>
+				<div class="price__list row_line">
+					<div class="price__item col_line">
+						<div class="price__title price__title_sub">Стоимость экскурсии: </div>
+						<div class="price__text">Взрослые – 500руб, <br>дети от 5 до 11 лет – 350руб, <br>дети до 5 лет бесплатно.</div>
+					</div>
+					<div class="price__item col_line">
+						<div class="price__title price__title_sub">Стоимость катания: </div>
+						<div class="price__text">Большой круг <br>(2,2км /10-12 мин) – 1000руб/чел, <br>Маленьких круг (700м/4мин) – 500руб/чел. <br>Дети до 5-ти лет бесплатно <br>(при сопровождении взрослым).</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="order">
+			<div class="container">
+				<div class="order__title">Принимаем как индивидуальное посещение экскурсии, так и организованные группы. Запись <br>через форму обратной связи или по телефону <a href="tel:89671207910">8-967-1207910</a>. Ждем вас!</div>
+				<a data-fancybox data-src="#popup-order" href="javascript:;" class="order__button button">записаться</a>
+			</div>
+		</div>
+		<div class="program" id="ny">
+			<div class="container">
+				<div class="program__wrap">
+					<div class="program__title title">новогодняя программа</div>
+					<div class="program__text">Новый год - это время, которое хочется проводить весело, активно, гуляя по заснеженному лесу. Добавьте к этому еще Деда Мороза и упряжку ездовых собак, и вы получите незабываемый праздник для себя и своих детей. Все это вы сможете найти у нас на нашей новогодней экскурсионной программе, которую будет вести для вас наш Дед Мороз.</div>
+					<a data-fancybox data-src="#popup-order" href="javascript:;" class="program__button button">записаться</a>
+				</div>
+			</div>
+		</div>
+		<div class="price price_blue">
+			<div class="container">
+				<div class="price__list row_line">
+					<div class="price__item col_line">
+						<div class="price__title price__title_sub">Стоимость <br>новогодней экскурсии:</div>
+						<div class="price__text">Взрослые – 650руб, <br>дети от 5 до 11 лет – 50руб, <br>дети до 5 лет бесплатно.</div>
+					</div>
+					<div class="price__item col_line">
+						<div class="price__title price__title_sub">Стоимость катания: </div>
+						<div class="price__text">Большой круг <br>(2,2км /10-12 мин) – 1000руб/чел, <br>Маленьких круг (700м/4мин) – 500руб/чел. <br>Дети до 5-ти лет бесплатно <br>(при сопровождении взрослым).</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="order">
+			<div class="container">
+				<div class="order__title">Принимаем как индивидуальное посещение экскурсии, так и организованные группы. Запись <br>через форму обратной связи или по телефону <a href="tel:89671207910">8-967-1207910</a>. Ждем вас!</div>
+				<a data-fancybox data-src="#popup-order" href="javascript:;" class="order__button button">записаться</a>
+			</div>
+		</div>
+		<div class="team" id="catania">
+			<div class="container">
+				<div class="team__wrap">
+					<div class="team__title title">Катание <br>на упряжке:</div>
+					<div class="team__text">
+						<p>Покататься на настоящей упряжке ездовых собак вы можете как в ходе экскурсии, так и без нее. Для этого вам нужно только позвонить нам по телефону и записаться на удобный для вас день.</p>
+						<p>Катание проходит в любое время года. Зимой вас ждет заснеженная волшебная лесная трасса и катание на санях. Весной и осенью катание проходит на квадроцикле, в который запрягается упряжка из 14 собак!</p>
+						<p>Кроме экскурсий и катаний на территории питомника, мы осуществляем выездные катания на вашей территории. Катание на собаках станет прекрасным дополнением к любому празднику, корпоративным мероприятиям, вечеринкам. В зависимости от количества катающихся, к вам приедет одна или несколько упряжек от нашего питомника. Все необходимое оборудование мы привозим с собой. От вас необходимо только наличие места для катания и хорошее настроение.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="quest" id="quest">
+			<div class="container">
+				<div class="quest__wrap">
+					<div class="quest__title title">Квесты для детей:</div>
+					<div class="quest__text">
+						<p>Ваши дети хотят поучаствовать в увлекательном командном путешествии, с разгадыванием головоломок, поиском карт и тайников, преодолением преград и трудностей и, конечно же, все это с участием собак? Тогда им просто необходимо поучаствовать в наших квестах. Их ждут несколько сценариев одноуровневых и многоуровневых игр, различные сюжеты, задания и приключения. Игра проводиться на территории питомника и в лесу, который его окружает. Наиболее увлекательны наши квесты будут для детей и подростков – тут они смогут не только провести день на природе, но и проявить смекалку, логику, скорость и выносливость, научиться работать в команде, как с людьми, так и с собаками. Наиболее интересен квест будет детям от 8 до 16 лет. Участвовать можно как одной, так и двумя командами. У нас есть маршруты разной протяженности для детей различного возраста.</p>
+						<p>После квеста вы сможете продолжить праздник на территории нашего питомника, где есть все необходимое. И пока дети заняты игрой, взрослые смогут отдохнуть, подготовить стол, пожарить шашлыки. После квеста можно будет познакомиться и пообщаться с другими собаками питомника. А тем, кому не хватило прогулки, мы предлагаем погулять с любой понравившейся собакой.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="services">
+			<div class="container">
+				<div class="services__title">Мы предлагаем:</div>
+				<div class="services__list row_line">
+					<div class="services__item col_line">
+						<div class="services__num">1</div>
+						<div class="services__text">Несколько сценариев для квеста: пираты, ковбои, космические приключения и прочее. У нас есть квесты различной сложности для детей разного возраста.</div>
+					</div>
+					<div class="services__item col_line">
+						<div class="services__num">2</div>
+						<div class="services__text">Общение и прогулка с собаками породы сибирский хаски</div>
+					</div>
+					<div class="services__item col_line">
+						<div class="services__num">3</div>
+						<div class="services__text">Квест на заказ - вы можете заказать у нас квест на любимую тематику</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="celebration" id="holidays">
+			<div class="container">
+				<div class="celebration__wrap">
+					<div class="celebration__title title">Проведение праздников:</div>
+					<div class="celebration__text">
+						<p>Еще одна услуга нашего питомника – проведение у нас корпоративных мероприятий, дней рождений и других праздников. Это не только повод выбраться из города и провести ваше мероприятие на природе, но и возможность дополнить и разнообразить его общение с собаками и катанием на упряжке.</p>
+						<p>Для всех желающих мы проведем экскурсию по нашему питомнику, организуем общение и прогулку с собаками, катание на собачьей упряжке. После катания для вас будут предоставлено все необходимое для шашлыков оборудование: мангал, решетки, шампуры, уголь, посуда и т.д. В зависимости от погоды и ваших предпочтений, вы сможете разместиться как на улице, так и в теплом крытом помещении.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="certificate" id="certificate">
+			<div class="container">
+				<div class="certificate__title">Подарочный сертификат:</div>
+				<div class="certificate__text">
+					<p>Ваши близкие или друзья любят природу и собак? Хотите сделать им незабываемый подарок? Подарите им наш сертификат на посещение нашей экскурсии и на катание на упряжке собак!</p>
+					<p>Приобрести именной сертификат вы можете на любую необходимую вам сумму. Получить его вы можете как лично у нас, так и в электронном виде.</p>
+				</div>
+			</div>
+		</div>
+		<div class="question">
+			<div class="question__title">Сделать заказ на сертификат, а также задать вопросы вы можете по телефону</div>
+			<div class="question__num"><a href="tel:89671207910">8-967-120 79 10</a></div>
+		</div>
+		<div class="gallery">
+			<div class="container">
+				<div class="gallery__title">фотогалерея</div>
+			</div>
+			<div class="gallery__list row_line">
+				<a href="upload/gallery/1.png" data-fancybox="gallery" class="gallery__item col_line"><img src="upload/gallery/1.png" alt=""></a>
+				<a href="upload/gallery/2.png" data-fancybox="gallery" class="gallery__item col_line"><img src="upload/gallery/2.png" alt=""></a>
+				<a href="upload/gallery/3.png" data-fancybox="gallery" class="gallery__item col_line"><img src="upload/gallery/3.png" alt=""></a>
+				<a href="upload/gallery/4.png" data-fancybox="gallery" class="gallery__item col_line"><img src="upload/gallery/4.png" alt=""></a>
+				<a href="upload/gallery/3.png" data-fancybox="gallery" class="gallery__item col_line"><img src="upload/gallery/3.png" alt=""></a>
+				<a href="upload/gallery/3.png" data-fancybox="gallery" class="gallery__item col_line"><img src="upload/gallery/3.png" alt=""></a>
+				<a href="upload/gallery/2.png" data-fancybox="gallery" class="gallery__item col_line"><img src="upload/gallery/2.png" alt=""></a>
+				<a href="upload/gallery/1.png" data-fancybox="gallery" class="gallery__item col_line"><img src="upload/gallery/1.png" alt=""></a>
+				<a href="upload/gallery/4.png" data-fancybox="gallery" class="gallery__item col_line"><img src="upload/gallery/4.png" alt=""></a>
+				<a href="upload/gallery/1.png" data-fancybox="gallery" class="gallery__item col_line"><img src="upload/gallery/1.png" alt=""></a>
+				<a href="upload/gallery/1.png" data-fancybox="gallery" class="gallery__item col_line"><img src="upload/gallery/1.png" alt=""></a>
+				<a href="upload/gallery/2.png" data-fancybox="gallery" class="gallery__item col_line"><img src="upload/gallery/2.png" alt=""></a>
+				<a href="upload/gallery/3.png" data-fancybox="gallery" class="gallery__item col_line"><img src="upload/gallery/3.png" alt=""></a>
+				<a href="upload/gallery/4.png" data-fancybox="gallery" class="gallery__item col_line"><img src="upload/gallery/4.png" alt=""></a>
+				<a href="upload/gallery/3.png" data-fancybox="gallery" class="gallery__item col_line"><img src="upload/gallery/3.png" alt=""></a>
+			</div>
+		</div>
+		<div class="contacts" id="contacts">
+			<div class="container row">
+				<div class="contacts__content right col">
+					<div class="contacts__title">контакты</div>
+					<div class="contacts__text">
+						<p><u><i class="icon icon-marker-yellow"></i></u>г. Москва, ул. </p>
+						<p><u><i class="icon icon-phone-yellow"></i></u><a href="">8 (800) 888-88-88</a></p>
+					</div>
+				</div>
+				<div class="contacts__map col"><iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A76f845d7c09fca99049ae9881b1106d287f0f118397f78d9ac42d1ffd440ba8f&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe></div>
+			</div>
+		</div>
 	</main>
 	<footer class="footer">
-		
+		<div class="container row">
+			<div class="logo col"><img src="upload/logo.png" alt=""></div>
+			<div class="address contact col">
+				<div class="contact__icon"><i class="icon icon-marker-white"></i></div>
+				<div class="contact__content">Адрес <br/>где мы находимся</div>
+			</div>
+			<div class="phone contact col">
+				<div class="contact__icon"><i class="icon icon-phone-white"></i></div>
+				<div class="contact__content">
+					<div class="phone__num"><a href="">8-800-000-00-00</a></div>
+					<div class="phone__link"><a data-fancybox data-src="#popup-order" href="javascript:;">Заказать звонок</a></div>
+				</div>
+			</div>
+		</div>
 	</footer>
 </body>
 </html>

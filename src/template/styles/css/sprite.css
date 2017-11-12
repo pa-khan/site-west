@@ -1,0 +1,23 @@
+.icon-marker-white {
+  background-image: url(../../img/sprite.png);
+  background-position: 0px 0px;
+  width: 35px;
+  height: 47px; }
+
+.icon-marker-yellow {
+  background-image: url(../../img/sprite.png);
+  background-position: -72px 0px;
+  width: 33px;
+  height: 33px; }
+
+.icon-phone-white {
+  background-image: url(../../img/sprite.png);
+  background-position: -35px 0px;
+  width: 37px;
+  height: 37px; }
+
+.icon-phone-yellow {
+  background-image: url(../../img/sprite.png);
+  background-position: 0px -47px;
+  width: 29px;
+  height: 29px; }
